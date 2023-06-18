@@ -8,7 +8,7 @@ The gNFT smart contract was adapated towards the idea of the Monsters/Characters
 ### 2. 
 Gtest details are added ASAP.
 ### 3.
-Frontend is built using Swift (UIKit, and SpriteKit). Pictures will be attached ASAP. 
+Frontend is built using Swift (UIKit, and SpriteKit). See pictures below
 ### 4. 
 Frontend interacts with Backend using HTTP requests, which are managed by an Express.js Server and a NetworkManager.
 
