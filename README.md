@@ -1,6 +1,6 @@
 # GearHack
 
-## Descriptoin
+## Description
 
 ## Submission Requirements
 ### 1. 
