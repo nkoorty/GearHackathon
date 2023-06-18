@@ -10,7 +10,7 @@ Gtest tests were implemented in the "dynamic-nft" folder inside of "GearNFT"
 ### 3. Frontend
 Frontend is built using Swift (UIKit, and SpriteKit). See pictures below
 ### 4. Frontend Integration
-Frontend interacts with Backend using HTTP requests, which are managed by an Express.js Server and a NetworkManager.
+Frontend interacts with Backend using HTTP requests, which are managed by an Express.js Server and a NetworkManager. The localhost is hosted in `GearServer`.
 ### 5. Installation
 #### Backend
 Install using npm 
