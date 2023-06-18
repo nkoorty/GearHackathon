@@ -6,11 +6,15 @@ Gearhead is an iOS-based game that seamlessly integrates the Polkadot.js wallet 
 ### 1. 
 The gNFT smart contract was adapated towards the idea of the Monsters/Characters in the game having dynamic attributes. Changes to the samples were made in order to accommodate the particular data that is being request by the iOS frontend.
 ### 2. 
-Gtest details are added ASAP.
+Gtest tests were implemented in the "dynamic-nft" folder inside of "GearNFT"
 ### 3.
 Frontend is built using Swift (UIKit, and SpriteKit). See pictures below
 ### 4. 
 Frontend interacts with Backend using HTTP requests, which are managed by an Express.js Server and a NetworkManager.
+### 5. 
+Description of how to run backend.
+
+
 
 ## Images
 <img src=https://github.com/nkoorty/GearHackathon/assets/101601277/306617b5-ccb8-4528-bdbb-7e90cca0183e width=20% height=20%>
