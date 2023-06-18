@@ -67,6 +67,35 @@ class NetworkManager {
         }
         task.resume()
     }
+        func getAttack(completion: @escaping (Result<String, Error>) -> Void) {
+        
+        guard let url = URL(string: "http://172.20.10.11:3000/getAttack") else { return }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if let error = error {
+                completion(.failure(error))
+            } else if let data = data, let httpResponse = response as? HTTPURLResponse {
+                print("HTTP response code: \(httpResponse.statusCode)")
+                if httpResponse.statusCode == 200 {
+                    do {
+                        if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+                           let attack = json["attack"] as? String {
+                            completion(.success(attack))
+                        }
+                    } catch {
+                        completion(.failure(error))
+                    }
+                } else {
+                    print("Received non-200 HTTP response: \(httpResponse.statusCode)")
+                    completion(.failure(NSError(domain: "", code: httpResponse.statusCode, userInfo: nil)))
+                }
+            }
+        }
+        task.resume()
+    }
 
 
 }
