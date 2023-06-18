@@ -1,0 +1,16 @@
+{
+  "name": "gearserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "polkadot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@gear-js/api": "^0.31.2",
+    "@polkadot/keyring": "^12.3.2"
+  }
+}
