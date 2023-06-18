@@ -1,0 +1,29 @@
+accounts:
+  HackBoston: track once portion coast trim knee safe neutral sense cabbage gown couch//HackBoston
+  bob: pet barely truly slogan fossil gown yard tenant faculty depend old tragic//bob
+  # my_account: '0x49b94e6f124d3a4a95f34158579dcfe87591be64a7edc2b038ad4099989a439f'
+
+prefunded_account:
+  HackBoston
+
+fund_accounts:
+  bob: 1000000000
+
+programs:
+  - id: 0
+    address: "0x8d565cf66ae200f84d270642bd87a275ae6f3fc7916f657818184f31c342b1f0"
+    path_to_meta: dynamicnft.meta.txt
+
+
+transactions: 
+- type: send_message
+  program: 0
+  account: HackBoston
+  payload:
+    updateDynamicData:
+      transaction_id: 5
+      token_metadata: 
+        TokenMetadata:
+          name: Attack
+          media: https://ipfs://QmQqzMTavQgT4f4T5v6PWBp7XNKtoPmC9jvn12WPT3gkSE
+  value: 0
